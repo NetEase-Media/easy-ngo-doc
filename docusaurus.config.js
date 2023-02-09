@@ -80,7 +80,7 @@ const config = {
             position: "left"
           },
           {
-            href: 'https://github.com/tanoya/my-website',
+            href: 'https://github.com/NetEase-Media/easy-ngo',
             label: 'GitHub',
             position: 'right',
           },
@@ -107,7 +107,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/tanoya/my-website',
+                href: 'https://github.com/NetEase-Media/easy-ngo',
               },
               {
                 label: '免责声明',
