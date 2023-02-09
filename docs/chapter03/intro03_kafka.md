@@ -4,7 +4,7 @@ title: kafka 插件
 ---
 
 # kafka 插件
-我们使用[`Sarama`](github.com/Shopify/sarama)作为`kafka`连接的`SDK`, 并且将其封装在`xkafka`包中。我们也为其适配了自动注册的`rkafka`包的实现。
+我们使用[`Sarama`](https://github.com/Shopify/sarama)作为`kafka`连接的`SDK`, 并且将其封装在`xkafka`包中。我们也为其适配了自动注册的`rkafka`包的实现。
 
 ## 如何使用
 #### 自动注册

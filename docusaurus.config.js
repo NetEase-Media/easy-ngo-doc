@@ -9,7 +9,7 @@ const config = {
   title: 'Easy-Ngo',
   tagline: 'Easy-Ngo 是一个超酷的开源 Golang 框架',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/easy-ngo-website/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
