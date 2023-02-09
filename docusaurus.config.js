@@ -116,7 +116,7 @@ const config = {
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Tanoya, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} NetEase Media Technology（Beijing）Co., Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
