@@ -38,7 +38,7 @@ func Register(stage Stage, fns ...func(ctx context.Context) error) {
 easy-ngo框架有一个r包，这个包里包含了easy-ngo框架支持的第三方SDK，这个包里的第三方SDK通过hook形式注册到了框架中，当用户需要使用SDK时，直接在import中将包导入，就会自动执行包里面的init方法，比如以下代码
 ```
 import (
-	_ "g.hz.netease.com/netease-media/easy-ngo/application/r/rgorm"
+	_ "github.com/NetEase-Media/easy-ngo/application/r/rgorm"
 )
 ```
 查看rgorm.go代码，可以看到rgorm.go代码中有一个init()方法

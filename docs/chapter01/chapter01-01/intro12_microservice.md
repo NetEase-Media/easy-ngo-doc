@@ -21,7 +21,7 @@ syntax = "proto3";
 
 package test;
 
-option go_package = "g.hz.netease.com/netease-media/easy-ngo/microservices/testdata;testdata";
+option go_package = "github.com/NetEase-Media/easy-ngo/microservices/testdata;testdata";
 
 // The greeting service definition.
 service Greeter {

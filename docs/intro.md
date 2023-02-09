@@ -71,10 +71,10 @@ package main
 import (
 	"net/http"
 
-	"g.hz.netease.com/netease-media/easy-ngo/application"
-	_ "g.hz.netease.com/netease-media/easy-ngo/application/r/rconfig"
-	"g.hz.netease.com/netease-media/easy-ngo/application/r/rgin"
-	_ "g.hz.netease.com/netease-media/easy-ngo/examples/application/include"
+	"github.com/NetEase-Media/easy-ngo/application"
+	_ "github.com/NetEase-Media/easy-ngo/application/r/rconfig"
+	"github.com/NetEase-Media/easy-ngo/application/r/rgin"
+	_ "github.com/NetEase-Media/easy-ngo/examples/application/include"
 	"github.com/gin-gonic/gin"
 )
 
@@ -109,7 +109,7 @@ go run . -c ./app.toml
 So Cool！更多示例，我们可以进入examples目录查看。
 easy-ngo访问地址如下
 ```
-https://github.com/NetEase-Media/easy-ngo
+https://github.com/NetEase-Media/easy-ngo-examples
 ```
 
 # 微信交流群
