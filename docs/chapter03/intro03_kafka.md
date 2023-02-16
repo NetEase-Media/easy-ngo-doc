@@ -9,7 +9,7 @@ title: kafka 插件
 ## 如何使用
 #### 自动注册
 在使用的过程中，我们只需要将`rkafka`导入到主程序中，比如
-```
+```go
 import (
     _ "path/to/r/rkafka"
 )
@@ -19,7 +19,7 @@ func main() {
 }
 ```
 主程序运行过程中会根据`配置`中的数据，创建对应的实例，并且放到内存中。我们在使用的过程中，可以调用
-```
+```go
 consumer := rkafka.GetConsumer("ngo.client.kafka.{name}")
 producer := rkafka.GetProducer("ngo.client.kafka.{name}")
 ```

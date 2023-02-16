@@ -25,7 +25,7 @@ touch main.go app.toml
 开始填充代码和配置信息
 
 *代码* main.go 文件
-```
+```go
 package main
 
 func main() {

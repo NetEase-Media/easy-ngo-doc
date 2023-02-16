@@ -91,7 +91,7 @@ enableTracer=true
 
 ### 第三步，添加链路追踪相关的启动代码
 在go的启动文件中添加如下代码
-```golang
+```go
 package main
 
 import (

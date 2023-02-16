@@ -9,7 +9,7 @@ title: gorm 插件
 ## 如何使用
 #### 自动注册
 在使用的过程中，我们只需要将`rgorm`导入到主程序中，比如
-```
+```go
 import (
     _ "path/to/r/rgorm"
 )

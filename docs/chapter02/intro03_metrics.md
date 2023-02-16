@@ -9,7 +9,7 @@ title: metrics 插件
 ## 如何使用
 #### 自动注册
 在使用的过程中，我们只需要将`rgorm`导入到主程序中，比如
-```
+```go
 import (
     _ "path/to/r/rprometheus"
 )
@@ -19,7 +19,7 @@ func main() {
 }
 ```
 主程序运行过程中会根据`配置`中的数据，创建对应的实例，并且放到内存中。我们在使用的过程中，可以调用
-```
+```go
 metricsCli := rmetrics.GetProvider()
 ```
 直接拿到客户端，就可以使用了。
@@ -31,7 +31,7 @@ metricsCli := rmetrics.GetProvider()
 |subsystem|string|App名称|app|
 
 ## 配置举例
-```
+```toml
 [ngo.prometheus]
 namespace = "ngo"
 subsystem = "app"
@@ -42,7 +42,7 @@ subsystem = "app"
 目前我们定义了`三种`打点方式。分别是`Counter`, `Gauge`和`Histogram`三种。分别定义了接口协议。
 
 #### Counter
-```
+```go
 type Counter interface {
 	With(labelValues ...string) Counter
 	Add(delta float64)
@@ -51,7 +51,7 @@ type Counter interface {
 ```
 
 #### Gauge
-```
+```go
 type Gauge interface {
 	With(labelValues ...string) Gauge
 	Set(value float64)
@@ -61,7 +61,7 @@ type Gauge interface {
 ```
 
 #### Histogram
-```
+```go
 type Histogram interface {
 	With(labelValues ...string) Histogram
 	Observe(value float64)
@@ -70,7 +70,7 @@ type Histogram interface {
 
 #### Provider 接口
 这里提供了一个`Provider`接口，用来创建不同类别的打点方式。
-```
+```go
 type Provider interface {
 	NewCounter(name string, labelNames ...string) Counter
 	NewGauge(name string, labelNames ...string) Gauge
