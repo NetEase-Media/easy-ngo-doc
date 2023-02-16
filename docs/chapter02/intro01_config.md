@@ -14,7 +14,7 @@ title: 配置文件
 - agollo
 
 你可以选择一个你想要的方式来加载你的配置信息。或者你有自己的配置服务，我们其实也提供了数据加载的`规范`,你只需要定义你自己的配置读取插件，并且实现 `ConfigSource` 接口即可。
-```
+```go
 type ConfigSource interface {
 	Load(sourcePathes []string) (map[string]interface{}, error)
 }
@@ -49,7 +49,7 @@ type ConfigSource interface {
 ```
 此时因为没有`-c`参数，我们就会去`main`所在的目录查找`application.toml`文件，如果找到了，我们就会加载该文件作为配置。
 但是我们也想在这样的方式下也想`加载其他的数据源`，我们在会默认去`application.toml`文件中读取配置
-```
+```toml
 [default.config]
 addr=["apollo://localhost:8080?appId=ngo&cluster=ngo-demo&namespaceNames=namespace.json&configType=properties&propertyKey=netease"]
 ```

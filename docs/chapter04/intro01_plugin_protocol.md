@@ -15,7 +15,7 @@ easy-ngo提供了hook的机制，在应用生命周期的每一个点都设置�
 * Offline：应用在下线的时候执行的钩子
 * HealthCheck：应用在健康检查的时候执行的钩子
 代码如下：
-```
+```go
 const (
 	Initialize Stage = iota
 	Start
@@ -27,7 +27,7 @@ const (
 ```
 hooks定义了Register和GetFns方法，用于注册和获取钩子
 Register方法主要是将想要在应用指定阶段执行的函数注册到hook中
-```
+```go
 func Register(stage Stage, fns ...func(ctx context.Context) error) {
 	mu.Lock()
 	defer mu.Unlock()
@@ -36,13 +36,13 @@ func Register(stage Stage, fns ...func(ctx context.Context) error) {
 ```
 ## r包
 easy-ngo框架有一个r包，这个包里包含了easy-ngo框架支持的第三方SDK，这个包里的第三方SDK通过hook形式注册到了框架中，当用户需要使用SDK时，直接在import中将包导入，就会自动执行包里面的init方法，比如以下代码
-```
+```go
 import (
 	_ "github.com/NetEase-Media/easy-ngo/application/r/rgorm"
 )
 ```
 查看rgorm.go代码，可以看到rgorm.go代码中有一个init()方法
-```
+```go
 func init() {
 	hooks.Register(hooks.Initialize, Initialize)
 }
@@ -60,7 +60,7 @@ init()方法当用户在引入包的时候自动运行，也就是用户在引�
 在easy-ngo框架基础上开发插件也是比较简单的
 1. 将第三方SDK引入到你的工程中
 2. 定义你需要hook点的相应函数，比如：你希望在Initialize的时候对插件进行初始化，那你直接定义一个Initialize方法，这个方法中，可以获得配置项，并进行第三方SDK的初始化动作
-```
+```go
 func Initialize(ctx context.Context) error {
 	opts := make([]xgorm.Option, 0)
 	conf.Get(key_prefix, &opts)
@@ -69,7 +69,7 @@ func Initialize(ctx context.Context) error {
 }
 ```
 3. 定义init()方法，并将你已经定义好的hook方法注册到hooks.go中
-```
+```go
 func init() {
 	hooks.Register(hooks.Initialize, Initialize)
 	hooks.Register(hooks.Start, Start)
@@ -77,7 +77,7 @@ func init() {
 }
 ```
 4. 经过以上的操作，第三方SDK就已经注册到了框架中，接下来，你直接可以使用SDK所提供的方法了
-```
+```go
 func main() {
 	app := application.Default()
 	app.Initialize()
