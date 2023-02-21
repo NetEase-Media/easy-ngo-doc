@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/easy-ngo-website/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'images/icon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -59,8 +59,8 @@ const config = {
       navbar: {
         title: 'Easy-Ngo',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Easy-Ngo Logo',
+          src: 'images/logo.png',
         },
         items: [
           {
