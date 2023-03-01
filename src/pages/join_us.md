@@ -2,6 +2,6 @@
 title: How To Join Us
 ---
 
-# 快快加入我们啊
-
-这里就是二维码了，或者发送邮件至 `tanoya321@163.com`
+# 欢迎有想法的同学加入我们
+我们目前提供了微信交流群，欢迎大家的加入
+![微信群](@site/static/images/Wechateasyngo.jpeg)
