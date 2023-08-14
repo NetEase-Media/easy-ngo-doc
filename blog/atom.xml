@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-test-site.com/easy-ngo-website/blog</id>
+    <title>Easy-Ngo Blog</title>
+    <updated>2022-12-28T13:14:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-test-site.com/easy-ngo-website/blog"/>
+    <subtitle>Easy-Ngo Blog</subtitle>
+    <icon>https://your-docusaurus-test-site.com/easy-ngo-website/images/icon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Easy-Ngo]]></title>
+        <id>/2022/welcome</id>
+        <link href="https://your-docusaurus-test-site.com/easy-ngo-website/blog/2022/welcome"/>
+        <updated>2022-12-28T13:14:00.000Z</updated>
+        <summary type="html"><![CDATA[摘要：这是Easy-Ngo的第一篇blog, 请大家多多支持。]]></summary>
+        <content type="html"><![CDATA[<p><code>摘要</code>：这是<code>Easy-Ngo</code>的第一篇<code>blog</code>, 请大家多多支持。</p><p>这里是主要的详情描述了，正文开始了啊。</p>]]></content>
+        <author>
+            <name>Darcy Tan</name>
+            <uri>https://github.com/tanoya</uri>
+        </author>
+        <category label="科普" term="科普"/>
+        <category label="入门" term="入门"/>
+        <category label="教程" term="教程"/>
+    </entry>
+</feed>

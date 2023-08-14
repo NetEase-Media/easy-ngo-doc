@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Easy-Ngo Blog</title>
+        <link>https://your-docusaurus-test-site.com/easy-ngo-website/blog</link>
+        <description>Easy-Ngo Blog</description>
+        <lastBuildDate>Wed, 28 Dec 2022 13:14:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Easy-Ngo]]></title>
+            <link>https://your-docusaurus-test-site.com/easy-ngo-website/blog/2022/welcome</link>
+            <guid>/2022/welcome</guid>
+            <pubDate>Wed, 28 Dec 2022 13:14:00 GMT</pubDate>
+            <description><![CDATA[摘要：这是Easy-Ngo的第一篇blog, 请大家多多支持。]]></description>
+            <content:encoded><![CDATA[<p><code>摘要</code>：这是<code>Easy-Ngo</code>的第一篇<code>blog</code>, 请大家多多支持。</p><p>这里是主要的详情描述了，正文开始了啊。</p>]]></content:encoded>
+            <category>科普</category>
+            <category>入门</category>
+            <category>教程</category>
+        </item>
+    </channel>
+</rss>
